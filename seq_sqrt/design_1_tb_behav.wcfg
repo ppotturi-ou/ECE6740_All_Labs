@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="622.501 ns"></ZoomEndTime>
+      <Cursor1Time time="237.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/design_1_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/btn" type="array">
+      <obj_property name="ElementShortName">btn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/led" type="array">
+      <obj_property name="ElementShortName">led[0:0]</obj_property>
+      <obj_property name="ObjectShortName">led[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/root_ans" type="array">
+      <obj_property name="ElementShortName">root_ans[14:0]</obj_property>
+      <obj_property name="ObjectShortName">root_ans[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/led" type="array">
+      <obj_property name="ElementShortName">led[0:0]</obj_property>
+      <obj_property name="ObjectShortName">led[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/root_ans" type="array">
+      <obj_property name="ElementShortName">root_ans[14:0]</obj_property>
+      <obj_property name="ObjectShortName">root_ans[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0_data_out" type="array">
+      <obj_property name="ElementShortName">Seq_decoder_bits_0_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Seq_decoder_bits_0_data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0_dout" type="logic">
+      <obj_property name="ElementShortName">Seq_decoder_bits_0_dout</obj_property>
+      <obj_property name="ObjectShortName">Seq_decoder_bits_0_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/btn_1" type="array">
+      <obj_property name="ElementShortName">btn_1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn_1[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/clr_1" type="logic">
+      <obj_property name="ElementShortName">clr_1</obj_property>
+      <obj_property name="ObjectShortName">clr_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0_done" type="logic">
+      <obj_property name="ElementShortName">sqrt2_0_done</obj_property>
+      <obj_property name="ObjectShortName">sqrt2_0_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0_root" type="array">
+      <obj_property name="ElementShortName">sqrt2_0_root[14:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt2_0_root[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/xlslice_0_Dout" type="array">
+      <obj_property name="ElementShortName">xlslice_0_Dout[0:0]</obj_property>
+      <obj_property name="ObjectShortName">xlslice_0_Dout[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/xlslice_1_Dout" type="array">
+      <obj_property name="ElementShortName">xlslice_1_Dout[0:0]</obj_property>
+      <obj_property name="ObjectShortName">xlslice_1_Dout[0:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jan 29 08:32:23 2024
+# Process ID: 37940
+# Current directory: D:/6740_github/Zybo_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36892 D:\6740_github\Zybo_adder\project_1.xpr
+# Log file: D:/6740_github/Zybo_adder/vivado.log
+# Journal file: D:/6740_github/Zybo_adder\vivado.jou
+# Running On: DLJY44V04, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 20, Host memory: 68397 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/6740_github/Zybo_adder/project_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/Zybo_adder' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/6740_github/ip_repo/myip_adder_1.0'; using path 'D:/ip_repo/myip_adder_1.0' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/6740_github/ip_repo/Adder_1.0'; using path 'D:/ip_repo/Adder_1.0' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ip_repo/myip_adder_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ip_repo/Adder_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 1625.832 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/6740_github/Zybo_adder/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/6740_github/Zybo_adder/project_1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- aptiv.com:user:myip_adder:1.0 - myip_adder_0
+Successfully read diagram <design_1> from block design file <D:/6740_github/Zybo_adder/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1652.445 ; gain = 26.613
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 29 09:26:31 2024...

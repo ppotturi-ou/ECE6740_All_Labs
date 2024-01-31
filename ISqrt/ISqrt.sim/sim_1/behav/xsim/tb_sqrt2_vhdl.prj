@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ISqrt.srcs/sources_1/new/sqrt2.vhd" \
+"../../../../ISqrt.srcs/sim_1/new/tb_sqrt2.vhd" \
+
+# Do not sort compile order
+nosort

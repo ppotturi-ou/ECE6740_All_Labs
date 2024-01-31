@@ -1,0 +1,10 @@
+06:32:35 **** Incremental Build of configuration Debug for project MyAdder_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 55668 D:/Zybo_adder/Zybo_20/export/Zybo_20/Zybo_20.xpfm standalone_domain D:/Zybo_adder/MyAdder_system/Debug/system.bif
+sdcard_gen --xpfm D:/Zybo_adder/Zybo_20/export/Zybo_20/Zybo_20.xpfm --sys_config Zybo_20 --bif D:/Zybo_adder/MyAdder_system/Debug/system.bif --bitstream D:/Zybo_adder/MyAdder/_ide/bitstream/design_1_wrapper6.bit --elf D:/Zybo_adder/MyAdder/Debug/MyAdder.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Zybo_adder/MyAdder/_ide/bitstream/design_1_wrapper6.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image D:/Zybo_adder/MyAdder_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+06:32:47 Build Finished (took 11s.957ms)
+

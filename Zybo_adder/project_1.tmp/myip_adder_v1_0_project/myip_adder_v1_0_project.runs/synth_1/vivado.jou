@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jan 25 06:04:29 2024
+# Process ID: 32552
+# Current directory: d:/Zybo_adder/project_1.tmp/myip_adder_v1_0_project/myip_adder_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log myip_adder_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myip_adder_v1_0.tcl
+# Log file: d:/Zybo_adder/project_1.tmp/myip_adder_v1_0_project/myip_adder_v1_0_project.runs/synth_1/myip_adder_v1_0.vds
+# Journal file: d:/Zybo_adder/project_1.tmp/myip_adder_v1_0_project/myip_adder_v1_0_project.runs/synth_1\vivado.jou
+# Running On: DLJY44V04, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 20, Host memory: 68397 MB
+#-----------------------------------------------------------
+source myip_adder_v1_0.tcl -notrace

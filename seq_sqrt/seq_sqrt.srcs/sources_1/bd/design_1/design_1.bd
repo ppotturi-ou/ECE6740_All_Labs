@@ -1,0 +1,220 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE0D5B47F63EE2247",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../seq_sqrt.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Seq_decoder_bits_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "sqrt2_0": ""
+    },
+    "ports": {
+      "btn": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "root_ans": {
+        "direction": "O",
+        "left": "14",
+        "right": "0"
+      },
+      "clr": {
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "Seq_decoder_bits_0": {
+        "vlnv": "xilinx.com:module_ref:Seq_decoder_bits:1.0",
+        "xci_name": "design_1_Seq_decoder_bits_0_0",
+        "xci_path": "ip\\design_1_Seq_decoder_bits_0_0\\design_1_Seq_decoder_bits_0_0.xci",
+        "inst_hier_path": "Seq_decoder_bits_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Seq_decoder_bits",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "din": {
+            "direction": "I"
+          },
+          "dout": {
+            "direction": "O"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_0_0",
+        "xci_path": "ip\\design_1_xlslice_0_0\\design_1_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "0"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "2"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_1_0",
+        "xci_path": "ip\\design_1_xlslice_1_0\\design_1_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "2"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "sqrt2_0": {
+        "vlnv": "xilinx.com:module_ref:sqrt2:1.0",
+        "xci_name": "design_1_sqrt2_0_0",
+        "xci_path": "ip\\design_1_sqrt2_0_0\\design_1_sqrt2_0_0.xci",
+        "inst_hier_path": "sqrt2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sqrt2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "go": {
+            "direction": "I"
+          },
+          "sw": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "done": {
+            "direction": "O"
+          },
+          "root": {
+            "direction": "O",
+            "left": "14",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Seq_decoder_bits_0_data_out": {
+        "ports": [
+          "Seq_decoder_bits_0/data_out",
+          "sqrt2_0/sw"
+        ]
+      },
+      "Seq_decoder_bits_0_dout": {
+        "ports": [
+          "Seq_decoder_bits_0/dout",
+          "sqrt2_0/go"
+        ]
+      },
+      "btn_1": {
+        "ports": [
+          "btn",
+          "xlslice_0/Din",
+          "xlslice_1/Din"
+        ]
+      },
+      "clr_1": {
+        "ports": [
+          "clr",
+          "Seq_decoder_bits_0/clr",
+          "sqrt2_0/clr"
+        ]
+      },
+      "sqrt2_0_done": {
+        "ports": [
+          "sqrt2_0/done",
+          "led"
+        ]
+      },
+      "sqrt2_0_root": {
+        "ports": [
+          "sqrt2_0/root",
+          "root_ans"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "Seq_decoder_bits_0/din"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "Seq_decoder_bits_0/clk",
+          "sqrt2_0/clk"
+        ]
+      }
+    }
+  }
+}

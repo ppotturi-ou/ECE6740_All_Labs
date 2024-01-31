@@ -1,0 +1,618 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Jan 25 06:05:37 2024
+| Host         : DLJY44V04 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file myip_adder_v1_0_timing_summary_routed.rpt -pb myip_adder_v1_0_timing_summary_routed.pb -rpx myip_adder_v1_0_timing_summary_routed.rpx -warn_on_violation
+| Design       : myip_adder_v1_0
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  174         
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (174)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (444)
+5. checking no_input_delay (46)
+6. checking no_output_delay (41)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (174)
+--------------------------
+ There are 174 register/latch pins with no clock driven by root clock pin: s00_axi_aclk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (444)
+--------------------------------------------------
+ There are 444 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (46)
+-------------------------------
+ There are 46 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (41)
+--------------------------------
+ There are 41 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  485          inf        0.000                      0                  485           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           485 Endpoints
+Min Delay           485 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg3_reg[23]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.031ns  (logic 1.142ns (12.649%)  route 7.889ns (87.351%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.805     7.823    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I1_O)        0.124     7.947 r  myip_adder_v1_0_S00_AXI_inst/slv_reg3[23]_i_1/O
+                         net (fo=8, routed)           1.084     9.031    myip_adder_v1_0_S00_AXI_inst/p_1_in[23]
+    SLICE_X113Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg3_reg[23]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[23]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.999ns  (logic 1.142ns (12.694%)  route 7.857ns (87.306%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.781     7.799    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I3_O)        0.124     7.923 r  myip_adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1/O
+                         net (fo=8, routed)           1.076     8.999    myip_adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1_n_0
+    SLICE_X109Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[23]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg3_reg[19]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.748ns  (logic 1.142ns (13.058%)  route 7.606ns (86.942%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.805     7.823    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I1_O)        0.124     7.947 r  myip_adder_v1_0_S00_AXI_inst/slv_reg3[23]_i_1/O
+                         net (fo=8, routed)           0.801     8.748    myip_adder_v1_0_S00_AXI_inst/p_1_in[23]
+    SLICE_X112Y83        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg3_reg[19]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[18]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.718ns  (logic 1.142ns (13.102%)  route 7.576ns (86.898%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.781     7.799    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I3_O)        0.124     7.923 r  myip_adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1/O
+                         net (fo=8, routed)           0.795     8.718    myip_adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1_n_0
+    SLICE_X108Y82        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[18]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[22]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.718ns  (logic 1.142ns (13.102%)  route 7.576ns (86.898%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.781     7.799    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I3_O)        0.124     7.923 r  myip_adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1/O
+                         net (fo=8, routed)           0.795     8.718    myip_adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1_n_0
+    SLICE_X108Y82        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[22]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg1_reg[19]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.623ns  (logic 1.142ns (13.247%)  route 7.481ns (86.753%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.710     7.728    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I2_O)        0.124     7.852 r  myip_adder_v1_0_S00_AXI_inst/slv_reg1[23]_i_1/O
+                         net (fo=8, routed)           0.771     8.623    myip_adder_v1_0_S00_AXI_inst/slv_reg1[23]_i_1_n_0
+    SLICE_X112Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg1_reg[19]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[2]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg1_reg[23]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.623ns  (logic 1.142ns (13.247%)  route 7.481ns (86.753%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y11                                               0.000     0.000 r  s00_axi_wstrb[2] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[2]
+    Y11                  IBUF (Prop_ibuf_I_O)         1.018     1.018 r  s00_axi_wstrb_IBUF[2]_inst/O
+                         net (fo=3, routed)           6.710     7.728    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[2]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I2_O)        0.124     7.852 r  myip_adder_v1_0_S00_AXI_inst/slv_reg1[23]_i_1/O
+                         net (fo=8, routed)           0.771     8.623    myip_adder_v1_0_S00_AXI_inst/slv_reg1[23]_i_1_n_0
+    SLICE_X112Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg1_reg[23]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[0]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[0]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.571ns  (logic 1.067ns (12.447%)  route 7.504ns (87.553%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U5                                                0.000     0.000 r  s00_axi_wstrb[0] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[0]
+    U5                   IBUF (Prop_ibuf_I_O)         0.943     0.943 r  s00_axi_wstrb_IBUF[0]_inst/O
+                         net (fo=3, routed)           6.960     7.903    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[0]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I3_O)        0.124     8.027 r  myip_adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1/O
+                         net (fo=8, routed)           0.544     8.571    myip_adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1_n_0
+    SLICE_X110Y79        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[0]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[4]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.513ns  (logic 1.067ns (12.531%)  route 7.447ns (87.469%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U5                                                0.000     0.000 r  s00_axi_wstrb[0] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[0]
+    U5                   IBUF (Prop_ibuf_I_O)         0.943     0.943 r  s00_axi_wstrb_IBUF[0]_inst/O
+                         net (fo=3, routed)           6.960     7.903    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[0]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I3_O)        0.124     8.027 r  myip_adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1/O
+                         net (fo=8, routed)           0.487     8.513    myip_adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1_n_0
+    SLICE_X112Y79        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 s00_axi_wstrb[0]
+                            (input port)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[7]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.513ns  (logic 1.067ns (12.531%)  route 7.447ns (87.469%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U5                                                0.000     0.000 r  s00_axi_wstrb[0] (IN)
+                         net (fo=0)                   0.000     0.000    s00_axi_wstrb[0]
+    U5                   IBUF (Prop_ibuf_I_O)         0.943     0.943 r  s00_axi_wstrb_IBUF[0]_inst/O
+                         net (fo=3, routed)           6.960     7.903    myip_adder_v1_0_S00_AXI_inst/s00_axi_wstrb_IBUF[0]
+    SLICE_X110Y80        LUT4 (Prop_lut4_I3_O)        0.124     8.027 r  myip_adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1/O
+                         net (fo=8, routed)           0.487     8.513    myip_adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1_n_0
+    SLICE_X112Y79        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/slv_reg0_reg[7]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[14]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[14]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.243ns  (logic 0.186ns (76.391%)  route 0.057ns (23.609%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y84        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[14]/C
+    SLICE_X111Y84        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[14]/Q
+                         net (fo=1, routed)           0.057     0.198    myip_adder_v1_0_S00_AXI_inst/sum_out[14]
+    SLICE_X110Y84        LUT6 (Prop_lut6_I5_O)        0.045     0.243 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[14]_i_1/O
+                         net (fo=1, routed)           0.000     0.243    myip_adder_v1_0_S00_AXI_inst/reg_data_out[14]
+    SLICE_X110Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[26]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[26]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.243ns  (logic 0.186ns (76.391%)  route 0.057ns (23.609%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y87        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[26]/C
+    SLICE_X111Y87        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[26]/Q
+                         net (fo=1, routed)           0.057     0.198    myip_adder_v1_0_S00_AXI_inst/sum_out[26]
+    SLICE_X110Y87        LUT6 (Prop_lut6_I5_O)        0.045     0.243 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[26]_i_1/O
+                         net (fo=1, routed)           0.000     0.243    myip_adder_v1_0_S00_AXI_inst/reg_data_out[26]
+    SLICE_X110Y87        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[10]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.244ns  (logic 0.186ns (76.078%)  route 0.058ns (23.922%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y83        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[10]/C
+    SLICE_X111Y83        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[10]/Q
+                         net (fo=1, routed)           0.058     0.199    myip_adder_v1_0_S00_AXI_inst/sum_out[10]
+    SLICE_X110Y83        LUT6 (Prop_lut6_I5_O)        0.045     0.244 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[10]_i_1/O
+                         net (fo=1, routed)           0.000     0.244    myip_adder_v1_0_S00_AXI_inst/reg_data_out[10]
+    SLICE_X110Y83        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.281ns  (logic 0.186ns (66.095%)  route 0.095ns (33.905%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y81        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[2]/C
+    SLICE_X111Y81        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[2]/Q
+                         net (fo=1, routed)           0.095     0.236    myip_adder_v1_0_S00_AXI_inst/Q[2]
+    SLICE_X113Y82        LUT6 (Prop_lut6_I5_O)        0.045     0.281 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.281    myip_adder_v1_0_S00_AXI_inst/reg_data_out[2]
+    SLICE_X113Y82        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[12]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.283ns  (logic 0.186ns (65.755%)  route 0.097ns (34.245%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y84        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[12]/C
+    SLICE_X111Y84        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[12]/Q
+                         net (fo=1, routed)           0.097     0.238    myip_adder_v1_0_S00_AXI_inst/sum_out[12]
+    SLICE_X110Y84        LUT6 (Prop_lut6_I5_O)        0.045     0.283 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[12]_i_1/O
+                         net (fo=1, routed)           0.000     0.283    myip_adder_v1_0_S00_AXI_inst/reg_data_out[12]
+    SLICE_X110Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[24]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[24]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.283ns  (logic 0.186ns (65.755%)  route 0.097ns (34.245%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y87        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[24]/C
+    SLICE_X111Y87        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[24]/Q
+                         net (fo=1, routed)           0.097     0.238    myip_adder_v1_0_S00_AXI_inst/sum_out[24]
+    SLICE_X110Y87        LUT6 (Prop_lut6_I5_O)        0.045     0.283 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[24]_i_1/O
+                         net (fo=1, routed)           0.000     0.283    myip_adder_v1_0_S00_AXI_inst/reg_data_out[24]
+    SLICE_X110Y87        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[28]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.283ns  (logic 0.186ns (65.755%)  route 0.097ns (34.245%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y88        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[28]/C
+    SLICE_X111Y88        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[28]/Q
+                         net (fo=1, routed)           0.097     0.238    myip_adder_v1_0_S00_AXI_inst/sum_out[28]
+    SLICE_X110Y88        LUT6 (Prop_lut6_I5_O)        0.045     0.283 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[28]_i_1/O
+                         net (fo=1, routed)           0.000     0.283    myip_adder_v1_0_S00_AXI_inst/reg_data_out[28]
+    SLICE_X110Y88        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.284ns  (logic 0.186ns (65.524%)  route 0.098ns (34.476%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y81        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[0]/C
+    SLICE_X111Y81        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[0]/Q
+                         net (fo=1, routed)           0.098     0.239    myip_adder_v1_0_S00_AXI_inst/Q[0]
+    SLICE_X110Y81        LUT6 (Prop_lut6_I5_O)        0.045     0.284 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.284    myip_adder_v1_0_S00_AXI_inst/reg_data_out[0]
+    SLICE_X110Y81        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[15]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[15]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.329%)  route 0.099ns (34.671%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y84        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[15]/C
+    SLICE_X111Y84        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[15]/Q
+                         net (fo=1, routed)           0.099     0.240    myip_adder_v1_0_S00_AXI_inst/sum_out[15]
+    SLICE_X110Y84        LUT6 (Prop_lut6_I5_O)        0.045     0.285 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[15]_i_1/O
+                         net (fo=1, routed)           0.000     0.285    myip_adder_v1_0_S00_AXI_inst/reg_data_out[15]
+    SLICE_X110Y84        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[27]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[27]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.329%)  route 0.099ns (34.671%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y87        FDRE                         0.000     0.000 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[27]/C
+    SLICE_X111Y87        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  myip_adder_v1_0_S00_AXI_inst/M1/sum_out_reg[27]/Q
+                         net (fo=1, routed)           0.099     0.240    myip_adder_v1_0_S00_AXI_inst/sum_out[27]
+    SLICE_X110Y87        LUT6 (Prop_lut6_I5_O)        0.045     0.285 r  myip_adder_v1_0_S00_AXI_inst/axi_rdata[27]_i_1/O
+                         net (fo=1, routed)           0.000     0.285    myip_adder_v1_0_S00_AXI_inst/reg_data_out[27]
+    SLICE_X110Y87        FDRE                                         r  myip_adder_v1_0_S00_AXI_inst/axi_rdata_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

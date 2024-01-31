@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/3c45/src/Adder.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/3c45/hdl/myip_adder_v1_0_S00_AXI.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/3c45/hdl/myip_adder_v1_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_myip_adder_0_0/sim/design_1_myip_adder_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
