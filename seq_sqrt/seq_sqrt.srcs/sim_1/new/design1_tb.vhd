@@ -51,19 +51,20 @@ begin
     port map (
       btn => btn,
       clr => clr,
+      clk => clk,
       led => led,
       root_ans => root_ans
     );
 
   -- Clock process
---  clk_process: process
---  begin
---    while now < 1000 ns loop  -- Simulate for 1000 ns, adjust as needed
---      clk <= not clk;
---      wait for CLK_PERIOD / 2;
---    end loop;
---    wait;
---  end process clk_process;
+  clk_process: process
+  begin
+    while now < 1000 ns loop  -- Simulate for 1000 ns, adjust as needed
+      clk <= not clk;
+      wait for CLK_PERIOD / 2;
+    end loop;
+    wait;
+  end process clk_process;
 
   -- Reset process
   reset_process: process
@@ -79,26 +80,128 @@ begin
   begin
     wait for 50 ns;  -- Wait for initial stabilization
 
-    -- Add your test scenarios here by changing btn values
+    -- Seq '10110' test scenarios here by changing btn values
+    btn <= "11";  -- Example test scenario
+    wait for 10 ns;
     btn <= "01";  -- Example test scenario
-    wait for 20 ns;
-
-    btn <= "10";  -- Another test scenario
-    wait for 20 ns;
-
+    wait for 10 ns;
+    
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    
+    btn <= "11";  -- Example test scenario
+    wait for 10 ns;
     btn <= "01";  -- Example test scenario
-    wait for 20 ns;
-
-    btn <= "11";  -- Another test scenario
+    wait for 10 ns;
+    
+    btn <= "11";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "01";  -- Example test scenario
+    wait for 10 ns;
+    
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    
     wait for 20 ns;
     
+    -- 0 bit data 
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 1 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 2 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 3 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 4 bit data
+    btn <= "11";  -- Example test scenario
+    wait for 10 ns;
     btn <= "01";  -- Example test scenario
-    wait for 20 ns;
-
-    btn <= "10";  -- Another test scenario
-    wait for 20 ns;
-    -- Add more test scenarios as needed
-
+    wait for 10 ns;
+    -- 5 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 6 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 7 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 08 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 09 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 10 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 11 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 12 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 13 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 14 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    -- 15 bit data
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    
+        -- dummy clocks
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "10";  -- Example test scenario
+    wait for 10 ns;
+    btn <= "00";  -- Example test scenario
+    wait for 10 ns;
     wait;
   end process stimulus_process;
 

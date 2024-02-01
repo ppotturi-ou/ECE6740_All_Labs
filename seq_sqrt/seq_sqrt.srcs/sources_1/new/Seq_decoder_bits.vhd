@@ -83,19 +83,19 @@ begin
           if din = '1' then
             next_state <= s3;
           else
-            next_state <= s2;
+            next_state <= s0;
           end if;
         when s3 =>
           if din = '1' then
             next_state <= s4;
           else
-            next_state <= s0;
+            next_state <= s2;
           end if;	  	  
         when s4 =>
           if din = '0' then
             next_state <= s5;
           else
-            next_state <= s2;
+            next_state <= s1;
           end if;
         when s5 =>
         if falling_edge(clk) then

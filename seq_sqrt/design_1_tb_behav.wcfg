@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="622.501 ns"></ZoomEndTime>
-      <Cursor1Time time="237.500 ns"></Cursor1Time>
+      <ZoomStartTime time="172.220 ns"></ZoomStartTime>
+      <ZoomEndTime time="802.721 ns"></ZoomEndTime>
+      <Cursor1Time time="571.220 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+      <ValueColumnWidth column_width="64"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="34" />
    <wvobject fp_name="/design_1_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -64,6 +64,7 @@
       <obj_property name="ElementShortName">btn_1[1:0]</obj_property>
       <obj_property name="ObjectShortName">btn_1[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/design_1_tb/uut/clr_1" type="logic">
       <obj_property name="ElementShortName">clr_1</obj_property>
@@ -84,5 +85,83 @@
    <wvobject fp_name="/design_1_tb/uut/xlslice_1_Dout" type="array">
       <obj_property name="ElementShortName">xlslice_1_Dout[0:0]</obj_property>
       <obj_property name="ObjectShortName">xlslice_1_Dout[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/din" type="logic">
+      <obj_property name="ElementShortName">din</obj_property>
+      <obj_property name="ObjectShortName">din</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/dout" type="logic">
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/U0/present_state" type="other">
+      <obj_property name="ElementShortName">present_state</obj_property>
+      <obj_property name="ObjectShortName">present_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/U0/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/U0/data_buffer" type="array">
+      <obj_property name="ElementShortName">data_buffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buffer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/Seq_decoder_bits_0/U0/count" type="other">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/root" type="array">
+      <obj_property name="ElementShortName">root[14:0]</obj_property>
+      <obj_property name="ObjectShortName">root[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/U0/a" type="array">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/U0/square" type="array">
+      <obj_property name="ElementShortName">square[16:0]</obj_property>
+      <obj_property name="ObjectShortName">square[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_tb/uut/sqrt2_0/U0/delta" type="array">
+      <obj_property name="ElementShortName">delta[15:0]</obj_property>
+      <obj_property name="ObjectShortName">delta[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

@@ -15,6 +15,7 @@ entity design_1_wrapper is
   port (
     btn : in STD_LOGIC_VECTOR ( 1 downto 0 );
     clr : in STD_LOGIC;
+    clk : in STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 0 to 0 );
     root_ans : out STD_LOGIC_VECTOR ( 14 downto 0 )
   );
@@ -26,7 +27,8 @@ architecture STRUCTURE of design_1_wrapper is
     btn : in STD_LOGIC_VECTOR ( 1 downto 0 );
     led : out STD_LOGIC_VECTOR ( 0 to 0 );
     root_ans : out STD_LOGIC_VECTOR ( 14 downto 0 );
-    clr : in STD_LOGIC
+    clr : in STD_LOGIC;
+    clk : in STD_LOGIC
   );
   end component design_1;
 begin
@@ -34,7 +36,9 @@ design_1_i: component design_1
      port map (
       btn(1 downto 0) => btn(1 downto 0),
       clr => clr,
+      clk => clk,
       led(0) => led(0),
       root_ans(14 downto 0) => root_ans(14 downto 0)
+
     );
 end STRUCTURE;
